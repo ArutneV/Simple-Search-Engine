@@ -6,11 +6,11 @@ var myApp = angular.module('myApp', [
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/list', {
-    templateUrl: 'partials/list.html',
+    templateUrl: 'html-templates/list.html',
     controller: 'ListController'
   }).
   when('/details/:itemId', {
-    templateUrl: 'partials/details.html',
+    templateUrl: 'html-templates/details.html',
     controller: 'DetailsController'
   }).
   otherwise({
